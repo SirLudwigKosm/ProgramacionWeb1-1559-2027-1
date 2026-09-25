@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas Semánticas y de Formateo de texto 2</title>
+    <meta name="author" content="MARIO ALBERTO CRUZ MALDONADO">
+
+</head>
+
+<body>
+<h1>Como Citar Semanticamente en HTML</h1>
+<!-- <citas cortas> -->
+
+    <p>Como dijo un sabio: "Yo solo se que no se nada" - Sabio</p>
+        <p>Como dijo un sabio: <q>Yo solo se que no se nada</q> - Sabio</p>
+
+<!-- <citas largas > -->
+
+    <p><blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam corporis quis expedita suscipit amet rerum pariatur ut at facilis vitae itaque, velit fugiat. Laboriosam aliquid commodi est impedit vitae nemo voluptatem ea iusto magnam nam accusantium nihil sint unde voluptatum aspernatur fugit assumenda labore consequatur, atque voluptas? Itaque, libero odio?</blockquote> - Sabio</p>
+        <p>Y otro dijo:</p><blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorem ducimus debitis beatae adipisci maiores illo, tenetur minus nostrum modi?</blockquote>
+            
+<hr>
+
+<h2>Saltos de Linea y Reglas Horizontales</h2>    
+        <p>Este es el primer Parrafo<br>Este es el Primero.5 Parrafo<br><br> HOLA<br>Este es el Tercer Parrafo</p>
+            <p>Este es el Cuarto Parrafo</p>
+
+<hr>
+<h2>Visualizacion y Formato de Código</h2>
+<p>Cuando nosotros implementamos <code>print("Hola Mundo")</code> en python, la salida en consola será: <code>Hola Mundo</code></p>
+<h3>Vsiualizacion de Código en varias lineas</h3>
+<p>Este programa suma 2 números en python</p>
+   <pre>
+         #Suma de 2 números 
+         a=5
+         b=10
+         print(a+b)
+   </pre>
+   <p>Este Código imprime un hola mundo en HTML</p>
+   <!-- Para escribir caracteres especiales como <> se utilizan las entidades HTML que permites avisar
+   al navegador que vamos a utilizar un simbolo especial, por ejemplo: &lt; es < &gt; es > &amp; &quot; &apos; &copy; &reg; &trade; -->
+
+   <pre>
+            &lt;body&gt;
+            &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+            &lt;/body&gt;
+   </pre>
+<hr>
+<p>Para representar la entrada de teclado (teclas) se utiliza la etiqueta <code>&lt;kbd&gt;&lt;/kbd&gt;</code></p>
+<p>Para copiar el texto de un archivo, utilizamos la combinacion de teclas <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
+
+</body>
+</html>
