@@ -37,6 +37,7 @@
     <div><h2>Tablas HTML</h2>
     <p>Es un elemento que nos permite distribuir informacion en un formato especifico</p>
     <table border="1px">
+    <caption>Tabla de Paises</caption>    
         <tr>
         <th>Pais</th>
         <th>Capital</th>
@@ -45,43 +46,148 @@
         </tr>
 
         <tr>
-        <td>Mexico</td>
+        <th>Mexico</th>
         <td>CDMX</td>
         <td>Español</td>
         <td>America</td>
         </tr>
 
         <tr>
-        <td>Peru</td>
+        <th>Peru</th>
         <td>Lima</td>
         <td>Español</td>
         <td>America</td>
         </tr>
 
         <tr>
-        <td>Japon</td>
+        <th>Japon</th>
         <td>Tokio</td>
         <td>Japones</td>
         <td>Asia</td>
         </tr>
 
         <tr>
-        <td>China</td>
+        <th>China</th>
         <td>Pekin</td>
         <td>Chino Mandarin</td>
         <td>Asia</td>
         </tr>
 
         <tr>
-        <td>Rusia</td>
+        <th>Rusia</th>
         <td>Moscu</td>
         <td>Ruso</td>
         <td>Asia y Europa</td>
         </tr>
 
+    </table>
+
+    <table border="1px">
+    <caption>Evaluaciones</caption>
+    <tr>
+    <th rowspan="2"></th>
+    <th colspan="2">1<sup>a</sup> Evaluación</th>
+    <th colspan="2">2<sup>a</sup> Evaluación</th>
+    <th colspan="2">3<sup>a</sup> Evaluación</th>
+    </tr>
+
+    <tr>
+    <td style="background-color: green;">Aprobados</td>
+    <td style="background-color: red;">Suspendidos</td>
+    <td style="background-color: green;">Aprobados</td>
+    <td style="background-color: red;">Suspendidos</td> 
+    <td style="background-color: green;">Aprobados</td>
+    <td style="background-color: red;">Suspendidos</td>     
+    </tr>
+
+    <tr>
+    <td>Informatica</td>
+    <td>2</td>
+    <td>34</td>
+    <td>16</td>
+    <td>7</td>
+    <td>19</td>
+    <td>5</td>
+    </tr>
+
+    <tr>
+    <td>Matematicas</td>
+    <td>2</td>
+    <td>34</td>
+    <td>16</td>
+    <td>7</td>
+    <td>19</td>
+    <td>5</td>
+    </tr>
 
 
     </table>
+
+    <br>
+
+    <table border="1px">
+        <caption> Horario</caption>
+        <tr>
+        <th>Horas</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+        </tr>
+
+        <tr>
+        <td>8:00-9:00</td>
+        <td rowspan="2" style="background-color: red;">Matematicas</td>
+        <td style="background-color: rgb(176, 22, 22);">Lenguas</td>
+        <td>Musica</td>
+        <td></td>
+        <td rowspan="2" style="background-color: red;">Matematicas</td>
+        </tr>
+
+        <tr>
+        <td>9:00-10:00</td>
+        <td>ingles</td>
+        <td>ingles</td>
+        <td style="background-color: pink;">E.Fisica</td>
+        </tr>
+
+        <tr>
+        <td>10:00-10:30</td>
+        <td colspan="5" style="background-color: green;">Recreo</td>
+        </tr>
+
+        <tr>
+        <td>10:30-11:30</td>
+        <td style="background-color: pink;">E.Fisica</td>
+        <td>Valenciano</td>
+        <td rowspan="2" style="background-color: rgb(177, 30, 30);;">Lengua</td>
+        <td style="background-color: yellow;">Informatica</td>
+        <td>ingles</td>
+        </tr>
+
+        <tr>
+        <td>12:30-13:30</td>
+        <td>Musica</td>
+        <td style="background-color: pink;">E.Fisica</td>
+        <td rowspan="2" style="background-color: red;">Matematicas</td>
+        <td style="background-color: yellow;">Informatica</td>
+        </tr>
+
+        <tr>
+        <td>13:30-14:30</td>
+        <td></td>
+        <td style="background-color: yellow;">informatica</td>
+        <td></td>
+        <td></td>
+        </tr>
+
+
+
+
+
+
+
     </div>
     
 </body>
