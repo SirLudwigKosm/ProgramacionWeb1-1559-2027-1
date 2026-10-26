@@ -1,0 +1,23 @@
+/*ESTILOS PARA UN SELECETOR DE UN ELEMENTO*/
+h2
+{
+    color:rgb(200, 23, 23);
+}
+/*ESTILOS PARA UN SELECETOR DE UNA CLASE*/
+.color-h2 
+{
+    color:#32cd32;
+}
+/*ESTILOS PARA UN SELECETOR DE UN IDENTIFICADOR*/
+#color-h1 
+{
+color: gold;
+}
+.color-stylesinternos
+{
+color: tomato;
+}
+#bg-header 
+{
+    background-color: rgb(3, 0, 173);
+}
