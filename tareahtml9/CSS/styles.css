@@ -40,3 +40,26 @@ background-color: black;}
 .salmon{color: salmon;}
 .blue{color: blue;}
 .lime{color: lime;}
+
+/*BORDER*/
+.borde 
+{
+    /* border-style: double ;
+    border-color: red;
+    border-width: 10px; */
+    border: 10px dotted lime;
+
+}
+.borde-interno
+{
+    border: 2px solid red;
+}
+
+.lineal
+{
+    background-image: linear-gradient(to bottom, red, lime);
+}
+.radial
+{
+    background-image: radial-gradient(ellipse, violet, white);   
+}

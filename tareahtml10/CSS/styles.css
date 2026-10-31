@@ -1,0 +1,34 @@
+.fondo-humano 
+{
+    /*background-image: Permite agregar imagenes como fondo de un elemento o de un contenedor y tambien se pueden agregar gradientes */
+    background-image: linear-gradient(to top, rgba(238, 130, 238, 0.406), gray),  url(../images/Ludwig.jpg);
+
+    /*background-size (cover, contain, width (px), height(px))
+    Especifica el tamaño de la imagen de fondo*/
+
+    background-size: cover;
+
+    /*background-repeat (repeat, no-repeat, repeat-x, repeat-y) aplcia cuando la imagen 
+    es mas pequeña que su contenedor*/
+
+    background-repeat: no-repeat;
+
+    /*background-position (rop, bottom, center, right, left ) va establecer
+    la posicion inciial de una imagen en su contenedor*/
+
+    background-position: center;
+
+    /*Propiedades generales de un Contenedor*/
+    height: 600px;
+    width: 600px;
+
+    /*background-attachment (scroll y fixed) 
+    se utiliza para que la imagen quede fija cuando un usuario se desplaza
+    por la pagina*/
+
+    background-attachment: fixed;
+}
+.p-1
+{
+    color: white;
+}
