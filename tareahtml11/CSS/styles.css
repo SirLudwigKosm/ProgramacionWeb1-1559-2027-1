@@ -1,0 +1,23 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#encabezado
+{
+    background-color: black;
+    text-align: center;
+    color: white;
+    border: 30px groove lime;
+
+
+    /*Relleno padding: espacio entre el contenido del elemento y su borde
+    se aplican los valores en sentido horario: top, right, bottom y left
+    1valor: t,r,b,l 2valores:tb,rl 3 valores: t,rl,b*/
+    padding: 150px 5px 50px 60px ;
+
+    /* border-style: groove;
+    border-width: 30px;
+    border-color: lime; */
+
+
+}
