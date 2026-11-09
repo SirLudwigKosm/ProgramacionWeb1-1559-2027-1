@@ -7,7 +7,6 @@ body
     background-color: black;
     text-align: center;
     color: white;
-    border: 30px groove lime;
 
 
     /*Relleno padding: espacio entre el contenido del elemento y su borde
@@ -15,9 +14,51 @@ body
     1valor: t,r,b,l 2valores:tb,rl 3 valores: t,rl,b*/
     padding: 150px 5px 50px 60px ;
 
+    /*EL margen: Es el espacio que hay entre un elemento HTML
+    de los elementos html a su alrededor*/
+    margin: 15px 5px;
+    /*Es el contorno visual alrededor de nuestro elemento HTML
+    (dentro de el podemos encontrar el contenido del elemento y su relleno) valores(solid,dotted,dashed,double,groove, ridge, inset, outset, hidden y none)*/
+    
+    border: 30px ridge lime;
+    border-top-style: double ;
+    border-left-color: red ;
+    border-right-color: red;
+    border-bottom-width: 2px ;
+    border-radius: 10% ;
+
+
     /* border-style: groove;
     border-width: 30px;
     border-color: lime; */
 
+    /*Se puede utilizar para crear efectos de sombras alrededor
+    del borde de un elemento, se debe especificar los valores:
+    desplazmiento horizontal, desplazamiento-vertical, radio-desenfoque, radio-propagacion
+    y el color*/
 
+    box-shadow: -5px 5px 10px 10px lime;
+}
+
+.introduccion 
+{
+    border: 2px solid gold;
+    background-color: rgb(223, 194, 194);
+    padding: 5px;
+    color: purple;
+    
+}
+
+.introduccion p
+{
+    width: 300px;
+    height: 150px;
+    border: 5px ridge yellow;
+}
+
+.introduccion span
+{
+    border: 6px double red;
+    padding: 10px;
+    margin: 50px;
 }
