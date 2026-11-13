@@ -1,0 +1,104 @@
+html
+{
+    font-size: 10px;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;/*10px*/
+}
+
+/*Orden para los estilos de los estados de un enlace 
+(LVFHA)*/
+
+a:link
+{
+    text-decoration: underline;
+    color:rgb(159, 0, 0)
+    
+}
+
+a:visited
+{
+    color: chartreuse;
+    text-decoration: line-through;
+}
+
+a:focus
+{
+    background-color: red;
+    color: black;
+    border: 2px dotted gold;
+}
+
+a:hover
+{
+    font-size: 12px;
+    color:black;
+    background-color: white;
+    border: 2px solid peru;
+}
+
+a:active
+{
+    color: rgb(30, 255, 0);
+    background-color: rgb(250, 231, 63);
+    border: 2px solid rgb(128, 210, 6);
+}
+
+#encabezado
+{
+    background-color: black;
+    color: white;
+    font-size: 2em;/*20px*/
+}
+#encabezado h1
+{
+    text-shadow: 20px 20px 20px mediumblue;
+    text-align: center;
+    font-size: 3em;
+}
+#encabezado p
+{
+    text-shadow: 20px 20px 20px purple;
+    font-size: 2em;
+    text-align: center;
+}
+.contenedor-enlaces
+{
+    border: 5px dotted gold;
+    background-color: black;
+    color: blue;
+}
+
+.enlaces h2
+{
+    text-shadow: 2px 2px 2px greenyellow;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.enlaces p
+{
+    text-align: justify;
+    padding: 5px;
+}
+
+.enlaces ul 
+{
+    border: 3px double red;
+    padding-left: 0;
+}
+
+.enlaces ul li
+{
+    margin: .8rem;
+    border: .3rem double green;
+    /*(disc, decimal, circle, square, lower-roman, lower-alpha,
+    upper-alpha, none */
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+}
+
