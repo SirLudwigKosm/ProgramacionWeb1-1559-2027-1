@@ -15,6 +15,19 @@ body
 #encabezado
 {
     border: 0.2rem solid purple;
+    position: sticky;
+    top: 0rem;
+    z-index: 6;
+}
+
+#encabezado h1
+{
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.5rem red ;
+    font-size: 5rem;
+    position: absolute;
+    top: 10rem;
+    left: 30%;
 }
 
 .logo
@@ -32,18 +45,22 @@ body
     height: 100%;
 }
 
-#encabezado h1
-{
-    text-align: center;
-    text-shadow: 0.2rem 0.2rem 0.5rem red ;
-    font-size: 5rem;
-}
-
 #navegacion ul
 {
-    font-size: 5rem;
+    font-size: 3rem;
     list-style-type: none;
     padding-left: 0;
+    text-align: center;
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    border: 0.2rem solid red;
+    
+}
+
+#navegacion ul li 
+{
+    display: inline-block;
 }
 
 #elementos-posicionados
@@ -51,7 +68,7 @@ body
     border: 0.2rem solid yellow;
     padding: 1rem;
     position: relative;
-    height: 100rem;
+    height: 150rem;
 }
 
 .amigdala
@@ -61,10 +78,10 @@ body
     height: 50rem;
     margin: 0.5rem;
     position: absolute;
-    top: 0rem;
-    left: 0rem;
+    top: 0;
+    left: 0;
     z-index: 1;
- 
+
 }
 
 .amigdala img
@@ -127,4 +144,51 @@ body
     width: 100%;
     height: 100%;
     
+}
+
+/*Consultas de Medios (medias queries)
+sirve para definir estilos a elementos HTML, segun el 
+tamaño de la pantalla de nuestro dispositivo, gracias a esto
+se nos proporciona una herramienta que nos sirve para la creacion
+de paginas web responsivas o adaptables. 
+Si se definen varias consultas de medios, se deben poner en forma 
+descendente segun la medida del dispositivo.
+MOVILES (<480px), Tablets(480px - 960px), PC(960px-120px)*/
+
+@media screen and (max-width: 1250px) 
+{
+    #encabezado h1
+{
+    left: 28%;
+    font-size: 3rem;
+
+}
+}
+
+@media screen and (max-width: 930px) 
+{
+    #encabezado h1
+{
+    left: 25%;
+    font-size: 2.5rem;
+
+}
+}
+
+@media screen and (max-width: 1250px) 
+{
+.logo
+{
+
+    height: 22rem;
+}
+}
+
+@media screen and (max-width: 930px) 
+{
+.logo
+{
+
+    height: 22rem;
+}
 }
