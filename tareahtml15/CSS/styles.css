@@ -1,0 +1,186 @@
+html 
+{
+    font-size: 10px;
+}
+
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom, black, rgba(255, 10, 10, 0.652));
+    color: white;
+}
+
+#encabezado
+{
+    border: 0.2rem solid purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#encabezado h1
+{
+    text-align: center;
+    text-shadow: 0.2rem 0.2rem 0.5rem red ;
+    font-size: 5rem;
+}
+
+.logo
+{
+    border: 0.2rem solid greenyellow;
+    border-radius: 45%;
+    width: 20%;
+    height: 30rem;
+}
+
+.logo img
+{
+    border-radius: 45%;
+    width: 100%;
+    height: 100%;
+}
+
+#navegacion ul
+{
+    font-size: 3rem;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    border: 0.5rem solid red;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+#navegacion ul li 
+{
+    display: inline-block;
+}
+
+#contenedor-flexible
+{
+    border: 0.2rem solid yellow;
+    padding: 1rem;
+    height: 150rem;
+    /*display: flex, Vuelve a un contenedor flexible*/
+    display: flex;
+    /*flex-direction: define el eje principal o main axis em 
+    el que va trabajar flex box (row, column, row-reverse y collumn-reverse*/
+    flex-direction: row;
+    /*justify-content: permite distribuir el espacio de los 
+    objetos flexibles a lo largo del eje principal o main-axis*/
+    justify-content: space-evenly;
+    /*align-items: deefine el ej cruzado o cross-axis con el que va 
+    trabajar flexbox ()*/
+    align-items: start;
+}
+
+.amigdala
+{
+    border: 0.2rem solid greenyellow;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+}
+
+.amigdala img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.blood
+{
+    border: 0.2rem solid greenyellow;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+}
+
+.blood img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.borne  
+{
+    border: 0.2rem solid greenyellow;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5;
+}
+
+.borne img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.cazador
+{
+    border: 0.2rem solid greenyellow;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+}
+
+.cazador img
+{
+    width: 100%;
+    height: 100%;
+    
+}
+
+/*Consultas de Medios (medias queries)
+sirve para definir estilos a elementos HTML, segun el 
+tamaño de la pantalla de nuestro dispositivo, gracias a esto
+se nos proporciona una herramienta que nos sirve para la creacion
+de paginas web responsivas o adaptables. 
+Si se definen varias consultas de medios, se deben poner en forma 
+descendente segun la medida del dispositivo.
+MOVILES (<480px), Tablets(480px - 960px), PC(960px-120px)*/
+
+@media screen and (max-width: 1250px) 
+{
+    #encabezado h1
+{
+    left: 28%;
+    font-size: 3rem;
+
+}
+}
+
+@media screen and (max-width: 930px) 
+{
+    #encabezado h1
+{
+    left: 25%;
+    font-size: 2.5rem;
+
+}
+}
+
+@media screen and (max-width: 1250px) 
+{
+.logo
+{
+
+    height: 22rem;
+}
+}
+
+@media screen and (max-width: 930px) 
+{
+.logo
+{
+
+    height: 22rem;
+}
+}
+}
