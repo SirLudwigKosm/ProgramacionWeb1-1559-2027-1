@@ -1,0 +1,259 @@
+html 
+{
+    font-size: 10px;
+}
+
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom, black, rgba(255, 10, 10, 0.652));
+    color: white;
+}
+
+#encabezado
+{
+    border: 0.2rem solid purple;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+#encabezado h1
+{
+    text-shadow: 0.2rem 0.2rem 0.5rem red ;
+    font-size: 5rem;
+}
+
+.logo
+{
+    border: 0.2rem solid greenyellow;
+    border-radius: 45%;
+    padding: 0.5rem;
+    width: 60%;
+    height: 90%;
+}
+
+.logo img
+{
+    border-radius: 45%;
+    width: 100%;
+    height: 100%;
+}
+
+#navegacion ul
+{
+    font-size: 3rem;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    border: 0.5rem solid red;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+#navegacion ul li 
+{
+    display: inline-block;
+}
+
+#contenedor-grid
+{
+    border: 0.2rem solid yellow;
+    padding: 1rem;
+    height: 100rem;
+    /*Primero se declara la propiedad grid*/
+    display: grid;
+    /*Declarar las columnas y las filas de nuestra cuadricula
+    ambas aceptan las medidas fijas y relativas (px, rem, em, %, auto,
+    fr)*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50rem 50rem;
+    /*Propiedades de la cuadricula (start, end, center, space-around
+    space-between, space-evenly)*/
+    justify-content: space-between;
+    align-content: center;
+    /*Propiedades de los objetos (start, end, center, stretch)*/
+    justify-items: center;
+    align-items: center;
+
+}
+
+.amigdala
+{
+    border: 0.2rem solid greenyellow;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+}
+
+.amigdala img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.blood
+{
+    border: 0.2rem solid greenyellow;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+}
+
+.blood img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.borne  
+{
+    border: 0.2rem solid greenyellow;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5;
+}
+
+.borne img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.cazador
+{
+    border: 0.2rem solid greenyellow;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+}
+
+.cazador img
+{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.contenedor-grid2
+{
+    border: 0.2rem solid yellow;
+    padding: 1rem;
+    height: 100rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+}
+
+.amigdala2
+{
+    border: 0.2rem solid greenyellow;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+    grid-column: 1 / 3;
+}
+
+.amigdala2 img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.blood2
+{
+    border: 0.2rem solid greenyellow;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+    grid-column: 3/5;
+}
+
+.blood2 img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.borne2  
+{
+    border: 0.2rem solid greenyellow;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5;
+    grid-column: 1 / 5;
+}
+
+.borne2 img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.cazador2
+{
+    border: 0.2rem solid greenyellow;
+    width: 20rem;
+    height: 30rem;
+    margin: 0.5rem;
+}
+
+.cazador2 img
+{
+    width: 100%;
+    height: 100%;
+    
+}
+/*Consultas de Medios (medias queries)
+sirve para definir estilos a elementos HTML, segun el 
+tamaño de la pantalla de nuestro dispositivo, gracias a esto
+se nos proporciona una herramienta que nos sirve para la creacion
+de paginas web responsivas o adaptables. 
+Si se definen varias consultas de medios, se deben poner en forma 
+descendente segun la medida del dispositivo.
+MOVILES (<480px), Tablets(480px - 960px), PC(960px-120px)*/
+
+@media screen and (max-width: 1250px) 
+{
+    #encabezado h1
+{
+    left: 28%;
+    font-size: 3rem;
+
+}
+}
+
+@media screen and (max-width: 930px) 
+{
+    #encabezado h1
+{
+    left: 25%;
+    font-size: 2.5rem;
+
+}
+}
+
+@media screen and (max-width: 1250px) 
+{
+.logo
+{
+
+    height: 22rem;
+}
+}
+
+@media screen and (max-width: 930px) 
+{
+.logo
+{
+
+    height: 22rem;
+}
+}
+}

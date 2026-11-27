@@ -66,7 +66,7 @@ body
 {
     border: 0.2rem solid yellow;
     padding: 1rem;
-    height: 150rem;
+    height: 100rem;
     /*display: flex, Vuelve a un contenedor flexible*/
     display: flex;
     /*flex-direction: define el eje principal o main axis em 
@@ -78,6 +78,7 @@ body
     /*align-items: deefine el ej cruzado o cross-axis con el que va 
     trabajar flexbox ()*/
     align-items: start;
+    flex-wrap: wrap;
 }
 
 .amigdala
